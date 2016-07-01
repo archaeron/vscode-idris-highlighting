@@ -1,0 +1,42 @@
+{
+    "name": "idris",
+    "displayName": "Idris",
+    "description": "",
+    "version": "0.0.1",
+    "publisher": "archaeron",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "idris",
+                "aliases": ["Idris", "idris"],
+                "extensions": [".idr"],
+                "configuration": "./idris.configuration.json"
+            },
+            {
+                "id": "ipkg",
+                "aliases": ["IPKG", "ipkg"],
+                "extensions": [".ipkg"],
+                "configuration": "./ipkg.configuration.json"
+            }
+        ],
+        "grammars":
+        [
+            {
+                "language": "idris",
+                "scopeName": "source.idris",
+                "path": "./syntaxes/idris.json"
+            },
+            {
+                "language": "ipkg",
+                "scopeName": "source.ipkg",
+                "path": "./syntaxes/ipkg.json"
+            }
+        ]
+    }
+}
